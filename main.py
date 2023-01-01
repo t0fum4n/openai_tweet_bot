@@ -37,11 +37,6 @@ response = openai.Completion.create(
 
     stop="|<EndOfText>|")
 
-# Write the generated text to the tweet.txt file
-
-#with open("tweet.txt", "w") as f:
-#    f.write(response.choices[0].text)
-
 # print the completion
 
 print(response.choices[0].text)
